@@ -1,6 +1,11 @@
-# Reown AppKit Example using Solana (next.js with App Router)
+# Reown AppKit using Solana (next.js with App Router)
 
 This is a Next.js project.
+
+## Features 
+ - connect wallet
+ - simulate
+ - Smart Contract Interaction
 
 ## Usage
 
