@@ -1,21 +1,71 @@
-# Reown AppKit using Solana (next.js with App Router)
+# Token Marketplace
 
-This is a Next.js project.
+A modern token marketplace and cross-chain bridge built with Next.js, Tailwind CSS, and the thirdweb SDK. Browse, search, and bridge tokens across multiple blockchains.
 
-## Features 
- - connect wallet
- - simulate
- - Smart Contract Interaction
+Live Demo: https://token-marketplace.thirdweb-preview.com/
 
-## Usage
+![Demo](https://token-marketplace.thirdweb-preview.com/demo-market.png)
+![Demo](https://token-marketplace.thirdweb-preview.com/demo-market-1.png)
+![Demo](https://token-marketplace.thirdweb-preview.com/demo-market-2.png)
 
-1. Go to [Reown Dashboard](https://dashboard.reown.com) and create a new project.
-2. Copy your `Project ID`
-3. Rename `.env.example` to `.env` and paste your `Project ID` as the value for `NEXT_PUBLIC_PROJECT_ID`
-4. Run `pnpm install` to install dependencies
-5. Run `pnpm run dev` to start the development server
 
-## Resources
+## Features
 
-- [Reown — Docs](https://docs.reown.com)
-- [Next.js — Docs](https://nextjs.org/docs)
+- Browse and search tokens across supported chains
+- Cross-chain bridging with the thirdweb SDK
+- Responsive, modern design
+- Connect wallet and view balances
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- Yarn or npm
+- thirdweb clientId
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/thirdweb-example/token-marketplace
+cd token-marketplace
+```
+
+# Install dependencies
+
+```bash
+npm install # or yarn install
+```
+
+### Development
+
+```bash
+npm run dev # or yarn dev
+```
+
+### Build for Production
+
+```bash
+npm run build # or yarn build
+```
+
+
+## Project Structure
+
+- `src/app/` — Main Next.js app pages
+- `src/components/` — Reusable UI components
+- `src/app/swap/` — Swap and token detail pages
+
+## Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](LICENSE)
+
+## Links
+- [reown](https://reown.com)
+- [thirdweb](https://thirdweb.com/)
+- [thirdweb SDK Docs](https://portal.thirdweb.com/)

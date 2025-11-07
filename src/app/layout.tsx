@@ -1,22 +1,41 @@
-import type { Metadata } from "next";
+"use client";
 
-import './globals.css';
-import ContextProvider from '@/context'
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Footer from "@/components/Footer";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { WagmiProvider } from "wagmi";
+import { ThirdwebProvider } from "thirdweb/react";
+import { config } from "./wagmi";
 
-export const metadata: Metadata = {
-  title: "AppKit Solana",
-  description: "AppKit dApp",
-};
+const inter = Inter({ subsets: ["latin"] });
 
-export default async function RootLayout({
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      staleTime: 1000 * 60 * 5, 
+    },
+  },
+});
+
+export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body>
-        <ContextProvider>{children}</ContextProvider>
+      <body className={inter.className}>
+        <WagmiProvider config={config}>
+          <QueryClientProvider client={queryClient}>
+            <ThirdwebProvider>
+              {children}
+              <Footer />
+            </ThirdwebProvider>
+          </QueryClientProvider>
+        </WagmiProvider>
       </body>
     </html>
   );
