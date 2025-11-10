@@ -22,18 +22,14 @@ createAppKit({
   networks: [base],
   projectId,
   metadata: {
-    name: "Game",
-    description: "Game",
+    name: "Market",
+    description: "Market",
     url: "https://example.app",
     icons: ["https://example.app/logo.png"],
   },
   features: {
-    email: false,
-    socials: false,
-    swaps: false,
-    onramp: false,
     history: false,
-    send: true,
+    
   },
   themeMode: "dark",
 });
