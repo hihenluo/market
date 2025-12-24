@@ -24,8 +24,8 @@ createAppKit({
   metadata: {
     name: "Market",
     description: "Market",
-    url: "https://example.app",
-    icons: ["https://example.app/logo.png"],
+    url: "https://oxymarket.app",
+    icons: ["https://exymarket.app/logo.png"],
   },
   features: {
     history: false,
