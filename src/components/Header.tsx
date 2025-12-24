@@ -12,10 +12,10 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <Link
-              href="/"
+              href="https://github.com"
               className="flex items-center justify-center text-2xl font-bold"
             >
-              <h1>thirdweb</h1>
+              <h1>OXYMARKET</h1>
             </Link>
            
           </div>
